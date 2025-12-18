@@ -4,15 +4,15 @@ import {
   Search, 
   Loader2
 } from 'lucide-react';
-import { generateWallpaper } from './geminiService.ts';
-import { Wallpaper, AspectRatio } from './types.ts';
+import { generateWallpaper } from './geminiService.js';
+import { Wallpaper, AspectRatio } from './types.js';
 
 // Components
-import Sidebar from './components/Sidebar.tsx';
-import ExploreView from './components/ExploreView.tsx';
-import CreateView from './components/CreateView.tsx';
-import LibraryView from './components/LibraryView.tsx';
-import PreviewModal from './components/PreviewModal.tsx';
+import Sidebar from './components/Sidebar.js';
+import ExploreView from './components/ExploreView.js';
+import CreateView from './components/CreateView.js';
+import LibraryView from './components/LibraryView.js';
+import PreviewModal from './components/PreviewModal.js';
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'explore' | 'create' | 'library'>('explore');
